@@ -29,7 +29,8 @@ const AuthStackScreen = () => {
 const HomeStack = createStackNavigator();
 const HomeStackScreen = () => {
   return (
-    <HomeStack.Navigator>
+    <HomeStack.Navigator
+      screenOptions={{headerShown: false, animationEnabled: false}}>
       <HomeStack.Screen name="HomeScreen" component={HomeScreen} />
     </HomeStack.Navigator>
   );
